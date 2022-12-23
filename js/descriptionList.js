@@ -3,10 +3,10 @@
 		name: "descriptionList",
 		level: "block", // Is this a block-level or inline-level tokenizer?
 		start(src) {
-			return src.match(/^(?:\w.*?)(?:\n(?:(?: *?|\t+?): .*(?:\n|$))(?:\n)*)+/)?.index;
+			return src.match(/^(?:\w.*?)(?:\n+?(?:(?: *?|\t+?): .*(?:\n|$))(?:\n)*)+/)?.index;
 		}, // Hint to Marked.js to stop and check for a match
 		tokenizer(src, tokens) {
-			const rule = /^(\w.*?)((?:\n(?:(?: *?|\t+?): .*(?:\n|$))(?:\n)*)+)/;
+			const rule = /^(\w.*?)((?:\n+?(?:(?: *?|\t+?): .*(?:\n|$))(?:\n)*)+)/;
 			const match = rule.exec(src);
 			if (match && match.length == 3) {
 				const token = {
@@ -14,7 +14,7 @@
 					type: "descriptionList", // Should match "name" above
 					raw: match[0], // Text to consume from the source
 					header: this.lexer.inlineTokens(match[1].trim()),
-					text: match[2].trim(), // Additional custom properties
+					text: match[2], // Additional custom properties
 					tokens: [], // Array where child inline tokens will be generated
 				};
 				this.lexer.inline(token.text, token.tokens); // Queue this data to be processed for inline tokens
@@ -33,10 +33,10 @@
 		name: "description",
 		level: "inline", // Is this a block-level or inline-level tokenizer?
 		start(src) {
-			return src.match(/^\n(?: *?|\t+?): /)?.index;
+			return src.match(/^\n+?(?: *?|\t+?): (?:.+?)(?:\n|$)/)?.index;
 		}, // Hint to Marked.js to stop and check for a match
 		tokenizer(src, tokens) {
-			const rule = /^\n(?: *?|\t+?): (.+?)(?:\n|$)/; // Regex for the complete token, anchor to string start
+			const rule = /^\n+?(?: *?|\t+?): (.+?)(?:\n|$)/; // Regex for the complete token, anchor to string start
 			const match = rule.exec(src);
 			if (match) {
 				return {
