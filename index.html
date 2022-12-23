@@ -25,6 +25,7 @@
 	</head>
 	<body>
 		<div id="app">Loading now...</div>
+		<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 		<script>
 			window.$docsify = {
 				name: "Principles of Economics",
@@ -40,6 +41,7 @@
 					crossChapter: true,
 					crossChapterText: true,
 				},
+				plugins: [EditOnGithubPlugin.create("https://github.com/Ladbaby/Principles-of-Economics/blob/master/", null)],
 			};
 		</script>
 		<!-- Docsify v4 -->
