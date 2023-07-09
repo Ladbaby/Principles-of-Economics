@@ -1,3 +1,4 @@
+[toc]
 
 # Elasticity and Its Application
 
@@ -168,6 +169,89 @@ total revenue
 !!! note
     直接和unit elastic的图像对比的话，感觉像是把inelastic的右半部分和elastic的左半部分拼在了一起
 
+### 5.1g Other Demand Elasticities
+
+除开 price elasticity of demand 之外，还存在其它种类的弹性
+
+#### The Income Elasticity of Demand
+
+体现“收入”对“需求”的影响
+
+$$
+\text{Income elasticity of demand}=\frac{\text{Percentage change in \textbf{quantity} demanded}}{\text{Percentage change in \textbf{income}}}
+$$
+
+#### The Cross-Price Elasticity of Demand
+
+“物品1的价格”波动对“物品2的需求”的影响
+
+$$
+\text{Cross-price elasticity of demand}=\frac{\text{Percentage change in \textbf{quantity} demanded of good 1}}{\text{Percentage change in the \textbf{price} of good 2}}
+$$
+
+## 5.2 The Elasticity of Supply
+
+### 5.2a The Price Elasticity of Supply and Its Determinants
+
+price elasticity of supply
+: a measure of how much the quantity ==supplied== of a good responds to a change in the ==price== of that good
+
+*elastic* 和 *inelastic* 的概念和 demand 的那边类似
+
+考虑不同的时间长度的话，计算出来的弹性也会有区别：短期内工厂不会轻易改变供给，所以弹性低；长期来说弹性就会高
+
+### 5.2b Computing the Price Elasticity of Supply
+
+$$
+\text{Price elasticity of supply}=\frac{\text{Percentage change in \textbf{quantity} supplied}}{\text{Percentage change in \textbf{price}}}
+$$
+
+### 5.2c The Variety of Supply Curves
+
+看图可知
+
+<img src="image/2023-07-07-22-09-43.png" width=%>
+
+垂直的时候压根就没有弹性；水平的时候弹性很高
+
+不过实际状态下，这个线一般就是弯的：
+
+<img src="image/2023-07-07-22-21-24.png" width=%>
+
+至于为什么弹性会有变化：
+
+- 供应量较低的时候，厂家的生产能力还有富裕，在价格略微长高的情况下也能给出很多货
+- 供应量高的时候，厂家需要更多的设备来生产，成本大幅度增高
+
+## 5.3 Three Applications of Supply, Demand, and Elasticity
+
+这一节会分析三个具体的案例
+
+### 5.3a Can Good News for Farming Be Bad News for Farmers?
+
+假设你是农民，现在发明了一种新的技术，可以增大单位亩产量，那么请问这个技术到底对你来说是好还是坏呢？
+
+复习一下 Ch4 学过的内容，我们分析这个问题要分为三个步骤：
+- whether the supply or demand curve shifts
+- the direction in which the curve shifts
+- use the supply-and-demand diagram to see how the market equilibrium changes
+
+对于这个问题来说：
+
+- 供给曲线会往右移动
+- 需求曲线不变
+
+那这种情况到底有没有对农民有利呢？我们可以来看看 total revenue $P \times Q$ (price of the wheat $\times$ quantity sold) 到底如何变化
+
+<img src="image/2023-07-08-11-08-42.png" width=%>
+
+既然 $P\times Q$ 等于围起来的矩形的面积，那事情就决定于 demand curve 的弹性了
+
+农民种植的东西一般都是比较基础的种植物，需求曲线的弹性会较小，所以即便价格大幅度降低，需求也不会怎么变化。故实际上 total revenue 是下降的
+
+虽然农业技术的进步对于整个社会来说是好事，但是对于农民来说，收入是会下降的
+
+### 5.3b Why Did OPEC Fail to Keep the Price of Oil High?
 
 
 
